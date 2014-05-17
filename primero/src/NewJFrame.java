@@ -27,15 +27,26 @@ public class NewJFrame extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Mensaje de bienvenida");
 
+        jLabel1.setBackground(new java.awt.Color(0, 0, 0));
         jLabel1.setFont(new java.awt.Font("Calibri Light", 1, 48)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(51, 51, 255));
+        jLabel1.setForeground(new java.awt.Color(0, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Bienvenido a GitHub");
+        jLabel1.setOpaque(true);
         getContentPane().add(jLabel1, java.awt.BorderLayout.CENTER);
+
+        jLabel2.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel2.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(102, 255, 102));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel2.setText("Autores: Fernando, José, Diego");
+        jLabel2.setOpaque(true);
+        getContentPane().add(jLabel2, java.awt.BorderLayout.PAGE_END);
 
         setSize(new java.awt.Dimension(518, 228));
         setLocationRelativeTo(null);
@@ -78,5 +89,6 @@ public class NewJFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }
